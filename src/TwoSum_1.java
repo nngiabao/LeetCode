@@ -3,16 +3,27 @@ import java.util.HashMap;
 public class TwoSum_1 {
     public static void main(String[] args) {
         int input[] ={2,7,11,15},target=9;
-        HashMap<Integer, Integer> map = new HashMap<>();
-        for(int i=0;i<input.length;i++){
-            map.put(i,input[i]);
-        }
-        for (int i : map.keySet()){
-            if(map.containsValue(target-map.get(i))){
-                System.out.println(map.get(i));
-            }
-        }
 
+
+    }
+
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        // Iterate through the array
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+
+            // Check if the complement exists in the map
+            if (map.containsKey(complement)) {
+                // Return the indices of the current number and its complement
+                return new int[]{map.get(complement), i};
+            }
+
+            // Add the current number and its index to the map
+            map.put(nums[i], i);
+        }
+        return null;
     }
 }
 
