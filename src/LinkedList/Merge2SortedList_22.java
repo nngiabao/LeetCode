@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class Merge2SortedList_22 {
     public static void main(String[] args) {
 
