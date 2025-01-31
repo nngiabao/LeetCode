@@ -1,3 +1,5 @@
+package Bit;
+
 public class AddBin_67 {
     public static void main(String[] args) {
         System.out.println(addBinary("11","1"));

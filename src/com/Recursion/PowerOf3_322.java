@@ -1,3 +1,5 @@
+package com.Recursion;
+
 public class PowerOf3_322 {
     public static void main(String[] args) {
 

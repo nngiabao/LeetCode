@@ -1,3 +1,5 @@
+package BinaryTree;
+
 public class Array2BST {
     public static void main(String[] args) {
 

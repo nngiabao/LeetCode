@@ -1,3 +1,5 @@
+package com.Recursion;
+
 public class PowerOfTwo_231 {
     public static void main(String[] args) {
         System.out.println(isPowerOfTwo(6));
