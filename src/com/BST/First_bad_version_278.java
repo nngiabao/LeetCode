@@ -1,3 +1,5 @@
+package com.BST;
+
 public class First_bad_version_278 {
     public static void main(String[] args) {
         System.out.println(firstBadVersion2(2126753390));

@@ -1,5 +1,6 @@
+package TwoDimArray;
+
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class DelMaxEachRow_2500 {
 

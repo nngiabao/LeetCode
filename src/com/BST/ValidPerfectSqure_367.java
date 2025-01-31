@@ -1,3 +1,5 @@
+package com.BST;
+
 public class ValidPerfectSqure_367 {
     public static void main(String[] args) {
 

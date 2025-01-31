@@ -1,3 +1,5 @@
+package com.BST;
+
 public class sqrt_69 {
     public static void main(String[] args) {
         System.out.println(mySqrt(2147395599));
