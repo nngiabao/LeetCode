@@ -1,4 +1,4 @@
-package TwoDimArray;
+package Matrix;
 
 import java.util.Arrays;
 

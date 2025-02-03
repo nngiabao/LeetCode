@@ -1,4 +1,4 @@
-package com.BST;
+package BST;
 
 public class sqrt_69 {
     public static void main(String[] args) {

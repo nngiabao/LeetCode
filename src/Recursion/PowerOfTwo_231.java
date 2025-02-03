@@ -1,4 +1,4 @@
-package com.Recursion;
+package Recursion;
 
 public class PowerOfTwo_231 {
     public static void main(String[] args) {

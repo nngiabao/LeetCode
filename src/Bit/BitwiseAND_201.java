@@ -1,3 +1,5 @@
+package Bit;
+
 public class BitwiseAND_201 {
     public static void main(String[] args) {
         System.out.println(rangeBitwiseAnd(5,7));
