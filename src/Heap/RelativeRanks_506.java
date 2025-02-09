@@ -1,3 +1,5 @@
+package Heap;
+
 import java.util.PriorityQueue;
 
 public class RelativeRanks_506 {
