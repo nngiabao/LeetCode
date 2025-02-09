@@ -9,6 +9,7 @@ public class Intersection2LinkedlList_160 {
         ListNode pA = headA;
         ListNode pB = headA;
         ListNode a = headA;
+        return null;
     }
 
     public class ListNode {
