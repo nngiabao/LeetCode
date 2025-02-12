@@ -1,3 +1,5 @@
+package BST;
+
 public class MaxCountOfNegAndPos_2529 {
     public static void main(String[] args) {
         System.out.println(maximumCount(new int[]{-3,-2,-1,0,0,1,2}));

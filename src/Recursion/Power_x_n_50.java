@@ -1,3 +1,5 @@
+package Recursion;
+
 public class Power_x_n_50 {
     public static void main(String[] args) {
         System.out.println(myPower(2,-2));

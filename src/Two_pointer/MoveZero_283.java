@@ -1,3 +1,5 @@
+package Two_pointer;
+
 public class MoveZero_283 {
     public static void main(String[] args) {
         moveZeroes(new int[] { 0,1,0,3,12});

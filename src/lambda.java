@@ -5,10 +5,19 @@ import java.util.*;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-        System.out.println(r(10));
-        //System.out.println(gcd(12,36));
+
+        int [] a = new int[3];
+        System.out.println(a[1]);
+
     }
 
+    public static class Pair{
+        int key,value;
+        public Pair(int key,int value){
+            this.key=key;
+            this.value=value;
+        }
+    }
     /*
     //1
     public static void r(int n) {
