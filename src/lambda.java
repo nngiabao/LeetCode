@@ -1,23 +1,19 @@
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.*;
-
+import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-
-        int [] a = new int[3];
-        System.out.println(a[1]);
-
+        Stack<String> s = new Stack<String>();
+        String s2 = "52";
+        System.out.println(s2.substring(0,1));
     }
 
-    public static class Pair{
-        int key,value;
-        public Pair(int key,int value){
-            this.key=key;
-            this.value=value;
-        }
-    }
+
+
+int n=10;
+
     /*
     //1
     public static void r(int n) {
@@ -63,10 +59,14 @@ public class lambda {
     }
 
 
-    public static int r(int n) {
-        if (n == 0) return 0;
-        else if (n == 1) return 1;
-        else return r(n - 2) + r(n / 2);
+    public static void r(int n,String a) {
+
+
+    }
+
+    public static void r(String a,int n) {
+
+
     }
 
 }
