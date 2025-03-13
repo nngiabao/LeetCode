@@ -7,7 +7,8 @@ public class lambda {
         //System.out.println( r(1));
         Stack<String> s = new Stack<String>();
         String s2 = "52";
-        System.out.println(s2.substring(0,1));
+
+        //System.out.println(5+null);
     }
 
 
