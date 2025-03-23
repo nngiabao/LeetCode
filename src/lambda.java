@@ -1,12 +1,20 @@
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.*;
+import java.util.stream.Collectors;
+
 import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
         Stack<String> s = new Stack<String>();
         String s2 = "52";
+        int [] a = {};
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Arrays.stream(a).boxed().collect(Collectors.toList()));
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        if(set.add(2)) System.out.println("2");
+        System.out.println(set);
 
         //System.out.println(5+null);
     }
