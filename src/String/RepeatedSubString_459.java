@@ -2,7 +2,7 @@ package String;
 
 public class RepeatedSubString_459 {
     public static void main(String[] args) {
-        System.out.println(repeatedSubstringPattern("abab"));
+        System.out.println(repeatedSubstringPattern2("abab"));
     }
 
     //Solution 1 - not good cause time exceed
@@ -16,6 +16,12 @@ public class RepeatedSubString_459 {
         return false;
     }
 
-    //Solution 2
+    //Solution 2 - trick to find substring
+    //double it and remove first and last letter in string
+    public static boolean repeatedSubstringPattern2(String s) {
+        String res = (s+s);
+        if(res.substring(1,res.length()-1).contains(s)) return true;
+        return false;
+    }
     
 }
