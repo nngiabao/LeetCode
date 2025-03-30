@@ -7,14 +7,15 @@ import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-        Stack<String> s = new Stack<String>();
-        String s2 = "52";
-        int [] a = {};
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Arrays.stream(a).boxed().collect(Collectors.toList()));
-        Set<Integer> set = new HashSet<>();
-        set.add(1);
-        if(set.add(2)) System.out.println("2");
-        System.out.println(set);
+        String regex = "^[0-9_]+$";
+        String a = "ab1-c2d";
+        Character t = '-';
+
+        String [] test = a.split(regex);
+        for(int i = 0; i<a.length(); i++){
+            char c = a.charAt(i);
+            if(Character.isAlphabetic(c)) System.out.println(c);
+        }
 
         //System.out.println(5+null);
     }
