@@ -1,15 +1,15 @@
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+
+import java.util.*;
 
 public class Int2Roman_12 {
     public static void main(String[] args) {
-
+        System.out.println(intToRoman(14));
 
     }
 
-    //Solution 1
-    public String intToRoman(int num) {
-        String res = "";
+    //Solution 1: Using hashmap
+    public static String intToRoman(int num) {
+        StringBuilder res = new StringBuilder();
         HashMap<String, Integer> map = new LinkedHashMap<>();
         map.put("M", 1000);
         map.put("CM", 900);
@@ -19,22 +19,44 @@ public class Int2Roman_12 {
         map.put("XC", 90);
         map.put("L", 50);
         map.put("XL", 40);
-        map.put("XI", 11);
         map.put("X", 10);
         map.put("IX", 9);
         map.put("V", 5);
         map.put("IV", 4);
         map.put("I", 1);
-        int i = 0;
-        while(num>0){
-            if(num>map.get(i)){
-                num -= map.get(i);
-                //res += map.getKey;
-                //map.keySet().stream().
-            }else{
-                i++;
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            while (num >= entry.getValue()) {
+                num -= entry.getValue();
+                res.append(entry.getKey());
             }
         }
-        return res;
+        return res.toString();
+    }
+
+    //Solution 2: Using 2D array to store instead of map
+    public static String intToRoman2(int num) {
+        StringBuilder res = new StringBuilder();
+        //build map by using 2D
+        Object[][] a = {{"M", 1000},
+                {"CM", 900},
+                {"D", 500},
+                {"CD", 400},
+                {"C", 100},
+                {"XC", 90},
+                {"L", 50},
+                {"XL", 40},
+                {"X", 10},
+                {"IX", 9},
+                {"V", 5},
+                {"IV", 4},
+                {"I", 1}};
+        for (Object[] row : a) {
+            int value = (Integer) row[1];
+            while(num >= value) {
+                res.append(row[0]);
+                num -= value;
+            }
+        }
+        return res.toString();
     }
 }

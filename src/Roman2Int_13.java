@@ -1,7 +1,7 @@
 import java.util.HashMap; // import the HashMap class
 public class Roman2Int_13 {
     public static void main(String[] args) {
-        System.out.println(romanToInt("VI"));
+        System.out.println(romanToInt("IV"));
     }
 
     //Solution 1
@@ -16,12 +16,13 @@ public class Roman2Int_13 {
             map.put('C', 100);
             map.put('D', 500);
             map.put('M', 1000);
-        int count=s.length()-1;
+        int count=map.get(s.charAt(s.length()-1));
         for(int i = s.length()-2; i >= 0; i--) {
-            if(map.get(s.charAt(i)) < map.get(s.charAt(i + 1))) {
-                count-= map.get(s.charAt(i));
+            char ch = s.charAt(i);
+            if(map.get(ch) < map.get(s.charAt(i + 1))) {
+                count-= map.get(ch);
             }else{
-                count+= map.get(s.charAt(i));
+                count+= map.get(ch);
             }
         }
         return count;
