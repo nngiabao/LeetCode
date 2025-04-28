@@ -11,13 +11,9 @@ public class lambda {
         String a = "ab1-c2d";
         Character t = '-';
 
-        String [] test = a.split(regex);
-        for(int i = 0; i<a.length(); i++){
-            char c = a.charAt(i);
-            if(Character.isAlphabetic(c)) System.out.println(c);
-        }
 
-        //System.out.println(5+null);
+
+        System.out.println(Math.floor(Math.sqrt(1)));
     }
 
 
