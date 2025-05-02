@@ -1,10 +1,20 @@
 package Array;
 
+import java.util.Arrays;
+
 public class HeightChecker_1051 {
-    //Solution 1'
+    //Solution 1: Normal method
     public int heightChecker(int[] heights) {
         //
-        return 0;
+        //using copied array
+        int [] temp = Arrays.copyOf(heights, heights.length);
+        Arrays.sort(temp);
+        //
+        int count=0;
+        for(int i=0;i<temp.length;i++){
+            if(temp[i] != heights[i]) count++;
+        }
+        return count;
     }
 
     //Solution 2:
