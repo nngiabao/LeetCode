@@ -7,13 +7,9 @@ import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-        String regex = "^[0-9_]+$";
-        String a = "ab1-c2d";
-        Character t = '-';
-
-
-
-        System.out.println(Math.floor(Math.sqrt(1)));
+        char a = 'd';
+        char b = 'e';
+        if(a < b ) System.out.println("ee");
     }
 
 
