@@ -18,6 +18,7 @@ public class UncommonWords_884 {
         for(int i = 0; i < s2_array.length; i++) {
             map_2.put(s2_array[i],map_2.getOrDefault(s2_array[i],0)+1);
         }
+
         //find unique fist dictionary
         List<String> res = new ArrayList<>();
         for(Map.Entry<String, Integer> entry : map_1.entrySet()) {
