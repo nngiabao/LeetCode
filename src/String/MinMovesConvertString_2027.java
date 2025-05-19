@@ -7,17 +7,18 @@ public class MinMovesConvertString_2027 {
         a.minimumMoves(s);
     }
 
+    //using substring
     public int minimumMoves(String s) {
-        boolean isX = false;
-        int count =0;
-        for(int i = 0; i < s.length(); i++){
-            char c = s.charAt(i);
-            if(c == 'X') isX = true;
-            else if(c == 'O'&& isX){
+        //every X need 3 consecutive = 1 move
+        int count=0,i=0;
+        while(i< s.length()) {
+            if(s.charAt(i)=='X') {
+                i+=3;
                 count++;
-                isX=false;
+            }else{
+                i++;
             }
         }
-        return (isX) ? ++count : count;
+        return count ;
     }
 }
