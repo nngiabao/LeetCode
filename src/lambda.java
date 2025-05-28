@@ -7,12 +7,17 @@ import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-        char a = 'd';
-        char b = 'e';
-        if(a < b ) System.out.println("ee");
+        String s = "2239";
+        System.out.println(s.charAt(0)-'0'+s.charAt(1)-'0');
+        System.out.println(s.charAt(0)-'0'+s.charAt(1)-'0');
     }
 
-
+    public static void xMethod(int length) {
+        while (length > 1) {
+            System.out.print((length - 1) + " ");
+            xMethod(length - 1);
+        }
+    }
 
 int n=10;
 
