@@ -9,26 +9,41 @@ public class PostorderTraversal_145 {
 
     }
 
+    /**
+     * Post-order traversal using stack
+     * Post-order traversal visits nodes in the order: left -> right -> root
+     * @param root The root node of the binary tree
+     * @return List of node values in post-order traversal
+     */
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> result = new ArrayList<Integer>();
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-
-        if(root == null) return result;
-        //visit root first
-        stack.push(root);
-        //
-        while(!stack.isEmpty()) {
-            TreeNode curr = stack.pop();
-            result.add(0,curr.val);
-
-            if(curr.left != null) {
-                stack.push(curr.left);
+        List<Integer> result = new ArrayList<>();
+        if (root == null) return result;
+        
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+        TreeNode lastVisited = null;
+        
+        // Continue while we have nodes to process or current node is not null
+        while (!stack.isEmpty() || current != null) {
+            // Reach the leftmost node of current node
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
             }
-
-            if(curr.right != null) {
-                stack.push(curr.right);
+            
+            // Get the top node from stack without removing it
+            TreeNode peekNode = stack.peek();
+            
+            // If right child exists and hasn't been visited yet, process it
+            if (peekNode.right != null && peekNode.right != lastVisited) {
+                current = peekNode.right;
+            } else {
+                // If right child doesn't exist or has been visited, process current node
+                result.add(peekNode.val);
+                lastVisited = stack.pop();
             }
         }
+        
         return result;
     }
 
