@@ -22,24 +22,28 @@ public class BinaryTreeTilt_563 {
         }
     }
 
+    //post-order traversal
     public int findTilt(TreeNode root) {
-        int sum=0;
-        if(root==null) return sum;
+        int sum = 0;
+        if (root == null) return root.val;
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while(!stack.isEmpty()){
-            TreeNode node = stack.pop();
-            //count
-            int temp = 0;
-            if(node.left!=null){
-                stack.push(node.left);
-                temp+=node.left.val;
+        TreeNode curr = root;
+        while (curr != null || !stack.isEmpty()) {
+            //travel to leftmost node
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
             }
-            if(node.right!=null){
-                stack.push(node.right);
-                temp=Math.abs(node.right.val-temp);
-            }
-            sum+=temp;
+            //
+            curr = stack.pop();
+            int l_val = 0, r_val = 0;
+            if (curr.left != null) l_val = curr.left.val;
+            if (curr.right != null) r_val = curr.right.val;
+            int temp = Math.abs(l_val - r_val);
+            sum += temp;
+            curr.val = temp;
+            //move to the right
+            curr = curr.right;
         }
         return sum;
     }
