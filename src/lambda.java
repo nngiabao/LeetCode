@@ -7,9 +7,9 @@ import static BST.sqrt_69.mySqrt;
 public class lambda {
     public static void main(String[] args) {
         //System.out.println( r(1));
-        String s = "2239";
-        System.out.println(s.charAt(0)-'0'+s.charAt(1)-'0');
-        System.out.println(s.charAt(0)-'0'+s.charAt(1)-'0');
+        int i=1;
+        System.out.println(3^5);
+        System.out.println(1^2);
     }
 
     public static void xMethod(int length) {
