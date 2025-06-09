@@ -16,4 +16,10 @@ public class CountPairsLessThanTarget_2824 {
     //SOlution 2:Using BST
     //Instead of find complement by normal way
     //we using BST to find it => O (nlogn)
+    public int countPairs2(List<Integer> nums, int target) {
+        //
+        int count=0;
+        //if(nums.size()==1 && ) return ++count;
+        return 1;
+    }
 }
