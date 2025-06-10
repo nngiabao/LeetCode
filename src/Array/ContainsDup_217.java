@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.HashSet;
 
 public class ContainsDup_217 {

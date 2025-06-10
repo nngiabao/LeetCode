@@ -1,3 +1,5 @@
+package Array;
+
 public class ArrangingCoin_441 {
     public static void main(String[] args) {
         System.out.println(arrangeCoins(5));
