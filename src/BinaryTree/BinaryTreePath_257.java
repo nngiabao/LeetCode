@@ -79,4 +79,32 @@ public class BinaryTreePath_257 {
         if(root.left != null) return root.val + "->" + DFS(root.left);
         return root.val + "->" + DFS(root.right);
     }
+
+   //Solution 3:Using backtracking
+   public List<String> binaryTreePaths2(TreeNode root) {
+        List<String> res = new ArrayList<>();
+        String path = "";
+        if(root == null) return res;
+        res.add(new String(path+root.val+"->"));
+        backtrack(res,root,new StringBuilder());
+        return res;
+   }
+
+   void backtrack(List<String> res,TreeNode node, StringBuilder path){
+        //base case => leaf
+       int len = path.length();
+       //
+       path.append(node.val);
+
+       if(node.left == null && node.right == null){
+           res.add(path.toString());
+           return;
+       }else{//its not a leaf
+           path.append("->");
+           if(node.left != null ) backtrack(res,node.left,path);
+           if(node.right != null) backtrack(res,node.left,path);
+       }
+       //this one uses to remove element by 1
+       path.setLength(len);
+   }
 }
