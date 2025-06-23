@@ -21,7 +21,7 @@ public class FindCommonCharacters_1002 {
             //put into the dictionary
             int[] temp = new int[26];
             for (int j = 0; j < words[i].length(); j++) {
-                temp[words[i].charAt(i) - 'a']++;
+                temp[words[i].charAt(j) - 'a']++;
             }
             //
             for (int j = 0; j < dictionary.length; j++) {
@@ -31,7 +31,9 @@ public class FindCommonCharacters_1002 {
         //find the common letter left
         List<String> res = new ArrayList<>();
         for (int i = 0; i < dictionary.length; i++) {
-            //if (dictionary[i] != 0) list.add(String.valueOf(words[0].charAt(i)));
+            for(int j = 0; j < dictionary[i]; j++){
+                res.add(String.valueOf((char)(i+'a')));
+            }
         }
         return res;
     }
