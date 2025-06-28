@@ -27,7 +27,7 @@ if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE/10 && pop < -8)) ret
 
 Using bitwise & (AND) instead of operation % to identify even or odd will be faster
 
-![image.png](image%201.png)
+![image.png](image%1.png)
 
 ![image.png](image%202.png)
 
