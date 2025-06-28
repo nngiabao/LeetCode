@@ -8,7 +8,7 @@
 
 XOR operation (Usually using for check duplicate element)
 
-![image.png](image.png)
+![image.png](images/image.png)
 
 For example:
 
