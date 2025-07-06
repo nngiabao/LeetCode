@@ -50,7 +50,7 @@ if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE/10 && pop > 7)) retu
 ### 🧮 Odd/Even Check via Bitwise
 Use `num & 1` instead of `num % 2`
 
-![Check Even or Odd](image%1.png)
+![Check Even or Odd](images/image2.png)
 ![More Examples](image%202.png)
 
 ---
