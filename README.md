@@ -169,8 +169,14 @@ index = row * cols + col;
 ```
 ---
 ## 2D Array
----
 
+---
+## Recursion 
+---
+## Backtracking
+---
+## Binary
+---
 ## 💡 Dynamic Programming
 
 ![DP Types](images/image10.png)
@@ -243,15 +249,19 @@ The Inclusion-Exclusion Principle is a powerful mathematical concept used in com
 ### 2. Catalan Numbers
 Catalan numbers form a sequence of natural numbers that appear in a wide variety of combinatorial problems, especially those involving recursive structures.
 **Useful in counting valid parenthesis strings, binary trees, etc.**
-
+![catalan](images/catalan.png)
 ---
-## Union Join
+## Divide and Conquer
 
 
 ---
 ## Tries (Prefix tree)
+A Trie (pronounced "try") is a tree-like data structure used to store and search strings, especially useful for prefix-based searching.
 ---
+#
 
+---
+## Advanced Graphs
 ---
 ---
 ---
