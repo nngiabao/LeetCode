@@ -256,6 +256,15 @@ Java provides multiple ways to sort data, whether it’s numbers, strings, or cu
 ### Bucket Sort
 ### Radix Sort
 ### Quick Sort 
+### Cyclic Sort (Index-Based)
+Cyclic Sort is a very efficient sorting algorithm specifically designed for a special type of problem where:
+The elements are in the range [1, N] or [0, N-1]
+You need to sort them in O(n) time and O(1) space (in-place)
+
+#### Use Cyclic Sort when the array:
+- Contains distinct integers in the range 0 to n-1 or 1 to n
+- You want to place each number at its correct index directly
+
 
 ---
 
