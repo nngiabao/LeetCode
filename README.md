@@ -29,17 +29,19 @@ Example: Google Maps uses graphs and shortest path algorithms (like Dijkstra's) 
 
 ## Some DSA that i haved used for my projects
 
-| Project Name    | Function                           | Example Use Case                                               |
-|-----------------|------------------------------------|----------------------------------------------------------------|
-| E-Commerce      | Online product listing and sales   | User browses products, adds items to cart, and checks out      |
-| E-Commerce      | Inventory management               | Admin adds stock, views low-inventory warnings                 |
-| E-Commerce      | Order tracking                     | User checks order status after placing an order                |
-| Chat Application| Real-time messaging                | Two users exchange messages instantly                          |
-| Chat Application| Typing indicator                   | User sees "User is typing..." while waiting for a reply        |
-| Chat Application| Message history                    | User scrolls up to view past messages                          |
-| Social Media    | Post sharing                       | User uploads an image with caption for friends to view         |
-| Social Media    | Like and comment system            | Users like and comment on others’ posts                        |
-| Social Media    | Friend request and follow system   | User sends a friend request or follows another account         |
+| Project Name     | Function                           | Example Use Case                                               | DSA Applied                                               |
+|------------------|------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
+| ShoppingMart     | Online product listing and sales   | User browses products, adds items to cart, and checks out      | Arrays, HashMap (cart), Sorting, Binary Search             |
+| ShoppingMart     | Inventory management               | Admin adds stock, views low-inventory warnings                 | HashMap, Priority Queue (for low-stock alerts)             |
+| ShoppingMart     | Order tracking                     | User checks order status after placing an order                | Queue (order pipeline), HashMap                            |
+| Zalo clone       | Real-time messaging                | Two users exchange messages instantly                          | Queue (message queue), HashMap (user sessions)             |
+| Zalo clone       | Typing indicator                   | User sees "User is typing..." while waiting for a reply        | HashMap (user typing states), Timer logic                  |
+| Zalo clone       | Message history                    | User scrolls up to view past messages                          | Stack/Deque (for loading messages), Pagination             |
+| Facebook clone   | Post sharing                       | User uploads an image with caption for friends to view         | ArrayList, Graph (for feed distribution)                   |
+| Facebook clone   | Like and comment system            | Users like and comment on others’ posts                        | HashMap (likes/comments), LinkedList (comment thread)      |
+| Facebook clone   | Friend request and follow system   | User sends a friend request or follows another account         | Graph (user connections), BFS/DFS (mutual friends, suggestions) |
+
+
 
 
 # **I'm open to backend internships and entry-level roles. Let’s connect!**
@@ -50,6 +52,7 @@ Example: Google Maps uses graphs and shortest path algorithms (like Dijkstra's) 
 - 🔄 **LeetCode 1–1000**: (https://www.notion.so/LeetCode-1-1000-221e4689b24a80dabf99eee90ec1adfe?source=copy_link)
 - 🔄 **LeetCode 1001–2000**: (https://www.notion.so/LeetCode-1001-2000-21ce4689b24a80d1bf9be444aafe0346?source=copy_link)
 - 🔄 **LeetCode 2001–3000+**: (https://www.notion.so/LeetCode-2001-3000-21ce4689b24a80bb848fcb889e89c882?source=copy_link)
+
 - Here i have found resources that DSA interview questions and their solutions:
 (https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions)
 
@@ -109,7 +112,7 @@ It maintains elements in increasing or decreasing order — that’s why it's ca
 
 **Used for problems with “next greater” or “previous smaller” patterns.**
 
-![Monotonic Stack](images/image 3.png)
+![Monotonic Stack](images/image3.png)
 
 ---
 
@@ -139,9 +142,13 @@ String pattern search using prefix table.
 ### 🔡 Sorting Characters in a String
 
 1. **Using `Arrays.sort()`**
+   
     ![Sort](images/image7.png)
-2. **Using Stream (Java 8+)**
+  
+3. **Using Stream (Java 8+)**
+    Ascending:
     ![Stream Sort](images/image8.png)
+   
     Descending:  
     ![Descending](images/image9.png)
 
