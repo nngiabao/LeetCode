@@ -46,13 +46,13 @@ Example: Google Maps uses graphs and shortest path algorithms (like Dijkstra's) 
 ---
 
 ## 📊 Progress Overview
-    **Here is some notes that i have made from practicing**
+**Here is some notes that i have made from practicing**
 - 🔄 **LeetCode 1–1000**: (https://www.notion.so/LeetCode-1-1000-221e4689b24a80dabf99eee90ec1adfe?source=copy_link)
 - 🔄 **LeetCode 1001–2000**: (https://www.notion.so/LeetCode-1001-2000-21ce4689b24a80d1bf9be444aafe0346?source=copy_link)
 - 🔄 **LeetCode 2001–3000+**: (https://www.notion.so/LeetCode-2001-3000-21ce4689b24a80bb848fcb889e89c882?source=copy_link)
-  
-**- Here i have found resources that DSA interview questions and their solutions:**
+- Here i have found resources that DSA interview questions and their solutions:
 (https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions)
+
 ---
 
 ## 🚀 Algorithm Concepts
@@ -81,8 +81,8 @@ if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE/10 && pop > 7)) retu
 ### 🧮 Odd/Even Check via Bitwise
 **Use `num & 1` instead of `num % 2`**
 
-![Check Even or Odd](images/image 1.png)
-![More Examples](images/image 2.png)
+![Check Even or Odd](images/image1.png)
+![More Examples](images/image2.png)
 ---
 
 ### 🗳️ Boyer-Moore Voting Algorithm
@@ -249,7 +249,13 @@ It explores as far as possible along a branch before backtracking.
 ---
 
 ## Sorting
+Java provides multiple ways to sort data, whether it’s numbers, strings, or custom objects
 
+**Some common sorting algorithms:**
+### Merge Sort
+### Bucket Sort
+### Radix Sort
+### Quick Sort 
 
 ---
 
