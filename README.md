@@ -27,7 +27,7 @@ Example: In e-commerce apps (like Amazon), searching and filtering products quic
 When systems grow (more users, more data), efficiency becomes critical.
 Example: Google Maps uses graphs and shortest path algorithms (like Dijkstra's) to compute routes.
 
-##Some DSA that i haved used for my projects
+## Some DSA that i haved used for my projects
 
 | Project Name    | Function                           | Example Use Case                                               |
 |-----------------|------------------------------------|----------------------------------------------------------------|
@@ -168,7 +168,7 @@ col = i % cols;
 index = row * cols + col;
 ```
 ---
-## 2D Array
+## 2D Array (Matrix)
 
 ---
 ## Recursion 
@@ -231,12 +231,23 @@ Example using class `Pair`:
 
 ---
 
+📌 ## Queue
+A Queue is a linear data structure that follows the FIFO principle:
+The first element added is the first one to be removed — like a line at a checkout counter.
+
+### 🔁Real-World Examples
+---
 ## 🔁 DFS
 DFS (Depth-First Search) is a fundamental algorithm used to traverse or search through data structures like trees or graphs.
 It explores as far as possible along a branch before backtracking.
 
 - Recursive
 - Stack-based
+
+---
+
+## Sorting
+
 
 ---
 
