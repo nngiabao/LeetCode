@@ -1,10 +1,9 @@
+package Bit;
+
 public class MissingNum_268 {
     public static void main(String[] args) {
         int [] a = {0,1,3};
-
         System.out.println(missingNumber(a));
-
-
     }
 
     public static int missingNumber(int[] nums) {

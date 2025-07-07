@@ -1,6 +1,5 @@
+package Array;
 import java.util.Arrays;
-import java.util.Collection;
-
 import static java.util.Arrays.sort;
 
 public class MaxProductOf3Nums_628 {
