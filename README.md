@@ -285,6 +285,12 @@ The Inclusion-Exclusion Principle is a powerful mathematical concept used in com
 Catalan numbers form a sequence of natural numbers that appear in a wide variety of combinatorial problems, especially those involving recursive structures.
 **Useful in counting valid parenthesis strings, binary trees, etc.**
 ![catalan](images/catalan.png)
+
+---
+### Shoelace's Formula (a.k.a Gauss's Area Formula)
+The Shoelace Formula is a method to calculate the area of a polygon when the coordinates of its vertices are known.
+
+![Shoelace Example](images/shoelace.png)
 ---
 ## Divide and Conquer
 
