@@ -99,7 +99,7 @@ if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE/10 && pop > 7)) retu
 
 ### 🔁 Circular Array / Modulo Technique
 Use modulo or double-size arrays to simulate circular behavior.
-
+Example of Modulo technique
 ---
 
 ### ➕ Prefix Sum
