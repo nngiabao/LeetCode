@@ -100,7 +100,8 @@ if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE/10 && pop > 7)) retu
 ### 🔁 Circular Array / Modulo Technique
 Use modulo or double-size arrays to simulate circular behavior.
 - **Modulo technique**
-     ** New index = (i + k) % total**
+     **New index = (i + k) % total**
+
 e.g: when we want to shift number at index 9 to 3 times when the length of array is 10 => i = 9 , k = 3
 => new index = (9 + 3) % 10 = 2 => that number will be at index 2
 ---
