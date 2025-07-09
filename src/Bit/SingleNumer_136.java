@@ -1,3 +1,5 @@
+package Bit;
+
 public class SingleNumer_136 {
     public static void main(String[] args) {
         int[] t = {4,1,2,1,2};
