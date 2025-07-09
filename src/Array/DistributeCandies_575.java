@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.HashSet;
 
 public class DistributeCandies_575 {
@@ -17,7 +19,6 @@ public class DistributeCandies_575 {
                 set.add(candyType[i]);
                 if(set.size() > candyType.length/2-1) return set.size();
             }
-            //set.add(candyType[i]);
         }
         return set.size();
     }
