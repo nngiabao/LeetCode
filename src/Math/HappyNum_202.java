@@ -1,5 +1,6 @@
-import java.util.HashSet;
-import java.util.Set;
+package Math;
+
+import java.util.*;
 
 public class HappyNum_202 {
     public boolean isHappy(int n) {
