@@ -1,3 +1,5 @@
+package BST;
+
 public class GuessNumber_374 {
 
     public static void main(String[] args) {
