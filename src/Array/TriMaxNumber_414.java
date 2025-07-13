@@ -1,7 +1,5 @@
-import java.util.LinkedList;
-import java.util.Queue;
 
-import static java.lang.Math.abs;
+package Array;
 
 public class TriMaxNumber_414 {
     public static void main(String[] args) {
