@@ -264,9 +264,28 @@ Java provides multiple ways to sort data, whether it’s numbers, strings, or cu
 
 **Some common sorting algorithms:**
 ### Merge Sort
+* Stable: `Yes`
+* Time Complexity:
+  * Best Case: `O(nlog(n))`
+  * Worst Case: `O(nlog(n))`
+  * Average Case: `O(nlog(n))`
 ### Bucket Sort
+* Time Complexity:
+  * Best Case: `Ω(n + k)`
+  * Worst Case: `O(n^2)`
+  * Average Case:`Θ(n + k)`
 ### Radix Sort
+* Time Complexity:
+  * Best Case: `Ω(nk)`
+  * Worst Case: `O(nk)`
+  * Average Case: `Θ(nk)`
 ### Quick Sort 
+* Stable: `No`
+* Time Complexity:
+  * Best Case: `O(nlog(n))`
+  * Worst Case: `O(n^2)`
+  * Average Case: `O(nlog(n))`
+
 ### Cyclic Sort (Index-Based)
 Cyclic Sort is a very efficient sorting algorithm specifically designed for a special type of problem where:
 The elements are in the range [1, N] or [0, N-1]
