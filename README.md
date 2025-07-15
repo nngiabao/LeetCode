@@ -309,7 +309,7 @@ A Trie (pronounced "try") is a tree-like data structure used to store and search
 ## Advanced Graphs
 ---
 ---
-## Here is a list of practice questions for interview from other sources: Kevin Naughton Jr.
+## Here is a list of practice questions for interview from other sources: [Kevin Naughton Jr.](https://github.com/kdn251/interviews)
 ```
 .
 ├── Array
