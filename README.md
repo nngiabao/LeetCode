@@ -270,7 +270,15 @@ Java provides multiple ways to sort data, whether it’s numbers, strings, or cu
   * Worst Case: `O(nlog(n))`
   * Average Case: `O(nlog(n))`
 ### Bucket Sort
+* Time Complexity:
+  * Best Case: `Ω(n + k)`
+  * Worst Case: `O(n^2)`
+  * Average Case:`Θ(n + k)`
 ### Radix Sort
+* Time Complexity:
+  * Best Case: `Ω(nk)`
+  * Worst Case: `O(nk)`
+  * Average Case: `Θ(nk)`
 ### Quick Sort 
 * Stable: `No`
 * Time Complexity:
