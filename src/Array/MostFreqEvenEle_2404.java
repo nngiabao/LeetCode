@@ -1,3 +1,4 @@
+package Array;
 import java.util.HashMap;
 
 public class MostFreqEvenEle_2404 {
