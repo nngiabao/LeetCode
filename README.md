@@ -309,6 +309,8 @@ Catalan numbers form a sequence of natural numbers that appear in a wide variety
 **Useful in counting valid parenthesis strings, binary trees, etc.**
 ![catalan](images/catalan.png)
 
+### 3. Triangle Inequality Theorem:
+
 ---
 ### Shoelace's Formula (a.k.a Gauss's Area Formula)
 The Shoelace Formula is a method to calculate the area of a polygon when the coordinates of its vertices are known.
@@ -321,6 +323,7 @@ The Shoelace Formula is a method to calculate the area of a polygon when the coo
 ---
 ## Tries (Prefix tree)
 A Trie (pronounced "try") is a tree-like data structure used to store and search strings, especially useful for prefix-based searching.
+![Triangle Example](images/triangle.png)
 ---
 #
 
