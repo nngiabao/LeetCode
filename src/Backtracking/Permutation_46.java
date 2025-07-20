@@ -5,7 +5,6 @@ public class Permutation_46 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         if(nums.length == 0) return result;
-
         backtrack(result, new ArrayList<>(), nums);
         return result;
     }

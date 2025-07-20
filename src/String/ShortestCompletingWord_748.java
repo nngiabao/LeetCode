@@ -1,3 +1,5 @@
+package String;
+
 import java.util.HashMap;
 
 public class ShortestCompletingWord_748 {
