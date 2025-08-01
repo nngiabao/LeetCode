@@ -1,6 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package Array;
+
+import java.util.*;
 
 public class PascalTriangle_118 {
     public static void main(String[] args) {

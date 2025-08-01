@@ -1,3 +1,5 @@
+package Array;
+
 public class ProductOfArray_238 {
     public static void main(String[] args) {
         //System.out.println(productExceptSelf(new int[]{1, 2, 3, 4}));
