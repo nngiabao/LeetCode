@@ -2,29 +2,20 @@ package Greedy;
 
 public class DistributeMoney_2591 {
     public static void main(String[] args) {
-        DistributeMoney_2591 obj = new DistributeMoney_2591();
-        System.out.println(obj.distMoney(20,3));
-
     }
-    public int distMoney(int money, int children) {
-        //edge case: every children get atleast 1 dollar
-        if(money < children) return -1;
+
+
+    public int distMoney2(int money, int children) {
         //
-        int count=0;
-        int prev=money-children;
-        boolean check = false;
-        if(prev-7>=0) {
-           while(prev>0  && children>0) {
-               if(prev == 3){
-                   count--;
-                   return count;
-               }else{
-                   children--;
-                   prev -= 7;
-                   count++;
-               }
-           }
+        if (money < children) return -1;
+        //
+        int maxEights = Math.min((money - children) / 7, children);
+        //
+        int remaining = money - maxEights * 8;
+        // If remaining money is 4 and only one child doesn't have 8
+        if (remaining == 4 && children - maxEights == 1) {
+            maxEights--;
         }
-        return count;
+        return maxEights;
     }
 }
