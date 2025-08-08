@@ -1,6 +1,7 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+package LinkedList;
+
+import java.util.*;
+
 
 class RecentCounter_933 {
     Queue<Integer> q;
