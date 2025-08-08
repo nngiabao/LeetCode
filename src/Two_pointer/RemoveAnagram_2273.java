@@ -1,6 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
+package Two_pointer;
 
+import java.util.*;
 public class RemoveAnagram_2273 {
     public static void main(String[] args) {
         Integer a = null;

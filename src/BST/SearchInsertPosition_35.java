@@ -1,3 +1,5 @@
+package BST;
+
 public class SearchInsertPosition_35 {
     public static void main(String[] args) {
         int []a = {1,3,5,6};int t = 5;

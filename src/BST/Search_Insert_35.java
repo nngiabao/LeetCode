@@ -1,3 +1,5 @@
+package BST;
+//
 public class Search_Insert_35 {
     public static void main(String[] args) {
         int[] num = {1,3,5,6};
