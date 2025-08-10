@@ -32,4 +32,6 @@ public class StudentsSanwichs_1700 {
         //
         return 0;
     }
+    //Solution 2:Better
+
 }
