@@ -1,6 +1,7 @@
 package Two_pointer;
 
 public class RemoveDupSortedArray2_80 {
+    /*
     public int removeDuplicates(int[] nums) {
         int count=0,i=0,j=0;
         boolean isDuplicate=false;
@@ -23,5 +24,5 @@ public class RemoveDupSortedArray2_80 {
             j++;
         }
         return len-count;
-    }
+    }*/
 }

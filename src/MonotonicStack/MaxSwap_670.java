@@ -19,7 +19,7 @@ public class MaxSwap_670 {
         for(int i=len-1; i>=0; i--){
 
         }
-        if(max_index > min_index) return num;
-
+        //if(max_index > min_index) return num;
+        return 1;
     }
 }
