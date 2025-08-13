@@ -20,27 +20,28 @@ public class SortedList_148 {
         }
     }
 
-    //Solution 1:Selection sort - but TLE
     public ListNode sortList(ListNode head) {
-        //use selection sort
         if (head == null || head.next == null) return head;
-        ListNode dummy = head.next;
-        ListNode current = head;
-        while (current != null && current.next != null) {
-            dummy = current.next;
-            while (dummy != null) {
-                if (dummy.val < current.val) {
-                    //swap
-                    int temp = dummy.val;
-                    dummy.val = current.val;
-                    current.val = temp;
-                }
-                dummy = dummy.next;
-            }
-            //
-            current = current.next;
+
+        // 1. Copy values into a list
+        List<Integer> values = new ArrayList<>();
+        ListNode curr = head;
+        while (curr != null) {
+            values.add(curr.val);
+            curr = curr.next;
         }
-        //
+
+        // 2. Sort
+        Collections.sort(values);
+
+        // 3. Copy values back into linked list
+        curr = head;
+        int i = 0;
+        while (curr != null) {
+            curr.val = values.get(i++);
+            curr = curr.next;
+        }
+
         return head;
     }
 
