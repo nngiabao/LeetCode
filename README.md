@@ -122,6 +122,9 @@ It maintains elements in increasing or decreasing order — that’s why it's ca
 
 ### 👫 Two Pointers
 **Efficient for sorted arrays or to find subarrays with specific properties.**
+**Dutch National Flag problem**
+=> a perfect place to use the two pointers (actually, three pointers) technique.
+Leetcode 75
 
 ---
 
