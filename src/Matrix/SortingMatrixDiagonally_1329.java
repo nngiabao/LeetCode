@@ -16,36 +16,54 @@ public class SortingMatrixDiagonally_1329 {
         a.diagonalSort(m);
 
     }
-
+    //Solution 1: Selection sort
     public int[][] diagonalSort(int[][] mat) {
         int m = mat.length, n = mat[0].length;
 
-// diagonals from top row
-        for (int sc = 1; sc < n; sc++) {
-            for (int r = 1, c = sc; r < m && c < n; r++, c++) {
-                // use mat[r][c]
-                if (mat[r][c] < mat[c - 1][r - 1]) {
-                    //swap
-                    int temp = mat[r - 1][c - 1];
-                    mat[r - 1][c - 1] = mat[c][r];
-                    mat[c][r] = temp;
+        // From top row
+        for (int sc = 0; sc < n; sc++) {
+            int len = Math.min(m, n - sc);
+            for (int i = 0; i < len - 1; i++) {
+                int minIdx = i;
+                for (int j = i + 1; j < len; j++) {
+                    int rj = j, cj = sc + j;
+                    int rMin = minIdx, cMin = sc + minIdx;
+                    if (mat[rj][cj] < mat[rMin][cMin]) {
+                        minIdx = j;
+                    }
+                }
+                if (minIdx != i) {
+                    int ri = i, ci = sc + i;
+                    int rMin = minIdx, cMin = sc + minIdx;
+                    int tmp = mat[ri][ci];
+                    mat[ri][ci] = mat[rMin][cMin];
+                    mat[rMin][cMin] = tmp;
                 }
             }
-            System.out.println(" ");
         }
 
-// diagonals from left column (skip (0,0))
-        for (int sr = 2; sr < m; sr++) {
-            for (int r = sr, c = 1; r < m && c < n; r++, c++) {
-                // use mat[r][c]
-                if (mat[r][c] < mat[c - 1][r - 1]) {
-                    //swap
-                    int temp = mat[r - 1][c - 1];
-                    mat[r - 1][c - 1] = mat[c][r];
-                    mat[c][r] = temp;
+        // From left column (skip (0,0))
+        for (int sr = 1; sr < m; sr++) {
+            int len = Math.min(m - sr, n);
+            for (int i = 0; i < len - 1; i++) {
+                int minIdx = i;
+                for (int j = i + 1; j < len; j++) {
+                    int rj = sr + j, cj = j;
+                    int rMin = sr + minIdx, cMin = minIdx;
+                    if (mat[rj][cj] < mat[rMin][cMin]) {
+                        minIdx = j;
+                    }
+                }
+                if (minIdx != i) {
+                    int ri = sr + i, ci = i;
+                    int rMin = sr + minIdx, cMin = minIdx;
+                    int tmp = mat[ri][ci];
+                    mat[ri][ci] = mat[rMin][cMin];
+                    mat[rMin][cMin] = tmp;
                 }
             }
         }
+
         return mat;
     }
 }
