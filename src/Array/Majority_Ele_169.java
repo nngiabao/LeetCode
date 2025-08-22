@@ -52,18 +52,6 @@ public class Majority_Ele_169 {
                 count--;
             }
         }
-        /*while(count<=nums.length/2 && i<nums.length){
-            if(nums[i]==candidate){
-                count++;
-            }else{
-                count--;
-            }
-            if(count==0){
-                candidate=nums[i];
-                count=1;
-            }
-            i++;
-        }*/
         return candidate;
     }
 
