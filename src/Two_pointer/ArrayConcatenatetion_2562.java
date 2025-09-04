@@ -25,9 +25,7 @@ public class ArrayConcatenatetion_2562 {
         int i = 0;
         int j = nums.length - 1;
         while (i < j) {
-
             concatenation = concatenation + (nums[i] * (int) Math.pow(10, String.valueOf(nums[j]).length()) + nums[j]);
-
             i++;
             j--;
         }
