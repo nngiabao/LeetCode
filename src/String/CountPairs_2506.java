@@ -5,31 +5,32 @@ import java.util.Set;
 
 public class CountPairs_2506 {
     public int similarPairs(String[] words) {
-        //to flag if checked or not
         int len = words.length;
         int pairs = 0;
-        boolean[] isChecked = new boolean[len];
+
+        // Represent each word as a bitmask of its characters
+        int[] masks = new int[len];
+        for (int i = 0; i < len; i++) {
+            int mask = 0;
+            for (char c : words[i].toCharArray()) {
+                mask |= 1 << (c - 'a');
+            }
+            masks[i] = mask;
+        }
+
+        // Count pairs with same mask
         for (int i = 0; i < len - 1; i++) {
             for (int j = i + 1; j < len; j++) {
-                if (checkSimilarPairs(words[i], words[j])) {
+                if (masks[i] == masks[j]) {
                     pairs++;
                 }
             }
         }
         return pairs;
     }
-
-    //put it into a dict
-    boolean checkSimilarPairs(String words1, String words2) {
-        boolean[] dict = new boolean[26];
-        for (char c : words1.toCharArray()) {
-            dict[c - 'a'] = true;
-        }
-        //check
-        for (char c : words2.toCharArray()) {
-            if (!dict[c - 'a']) return false;
-        }
-        return true;
-    }
     //Solution 2:Using hashmap - better
+    public int similarPairs2(String[] words) {
+        //not done
+        return 1;
+    }
 }
