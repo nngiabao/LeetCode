@@ -7,7 +7,6 @@ public class CountPairs_2506 {
     public int similarPairs(String[] words) {
         int len = words.length;
         int pairs = 0;
-
         // Represent each word as a bitmask of its characters
         int[] masks = new int[len];
         for (int i = 0; i < len; i++) {
@@ -17,7 +16,6 @@ public class CountPairs_2506 {
             }
             masks[i] = mask;
         }
-
         // Count pairs with same mask
         for (int i = 0; i < len - 1; i++) {
             for (int j = i + 1; j < len; j++) {
