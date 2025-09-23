@@ -6,9 +6,6 @@ public class ConvertTwoNoZeroIntegers_1317 {
         for(int i=1;i<=n/2;i++){
             if(check(i) && check(n-i)) return new int[]{-1, -1};
         }
-        //
-        //
-
         return new int[]{-1, -1};
     }
     //check method

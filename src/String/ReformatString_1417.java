@@ -6,28 +6,40 @@ public class ReformatString_1417 {
         StringBuilder letter = new StringBuilder();
         StringBuilder digit = new StringBuilder();
         //
-        for(int i=0;i<s.length();i++){
+        for (int i = 0; i < s.length(); i++) {
             //
             char c = s.charAt(i);
             //
-            if(Character.isLetter(c)){
+            if (Character.isLetter(c)) {
                 letter.append(c);
-            }else{
+            } else {
                 digit.append(c);
             }
         }
-        int i=0,j=0;
         //build
-        int index=0;
+        //check if the gap > 1 => emtry String
+        int letter_len = letter.length();
+        int digit_len = digit.length();
+        if (Math.abs(letter_len - digit_len) > 1) return "";
+        //else start with larger
         StringBuilder sb = new StringBuilder();
-        while(i< letter.length() && j<digit.length()){
-            if((index&1)==0) sb.append(letter.charAt(j));
-            else sb.append(digit.charAt(i));
+        //build res
+        int i = 0;
+        //check which start first
+        boolean digitFirst = (digit_len >= letter_len) ? true : false;
+        while (i < s.length() / 2) {
+            if (digitFirst) {
+                sb.append(digit.charAt(i));
+                sb.append(letter.charAt(i));
+            } else {
+                sb.append(letter.charAt(i));
+                sb.append(digit.charAt(i));
+            }
             i++;
-            j++;
-            index++;
         }
-        //
+        if (i < letter_len) {
+            sb.append(letter.charAt(i));
+        } else if (i < digit_len) sb.append(digit.charAt(i));
         return sb.toString();
     }
 }
