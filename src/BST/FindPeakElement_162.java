@@ -14,10 +14,10 @@ public class FindPeakElement_162 {
         //
         int len = nums.length;
         int left=0,right=len-1;
-        while(left<=right){
+        while(left<right){
             int mid = left+(right-left)/2;
             //peek in the left side (including the mid)
-            if(nums[mid] > nums[mid+1]) right = mid-1;
+            if(nums[mid] > nums[mid+1]) right = mid;
             //peek in the right side
             else left = mid+1;
         }
