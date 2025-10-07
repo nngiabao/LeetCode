@@ -15,8 +15,9 @@ public class MyCalendar1_704 {
             for(int[] book : list){
                 int start = book[0], end = book[1];
                 if(Math.max(start,startTime) < Math.min(end,endTime)) return false;
-                list.add(new int[]{startTime, endTime});
+
             }
+            list.add(new int[]{startTime, endTime});
         }
         return true;
     }
