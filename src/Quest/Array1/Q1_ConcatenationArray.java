@@ -1,4 +1,4 @@
-package Quest;
+package Quest.Array1;
 
 public class Q1_ConcatenationArray {
     public int[] getConcatenation(int[] nums) {
